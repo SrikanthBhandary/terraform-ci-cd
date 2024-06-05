@@ -4,3 +4,11 @@ resource "null_resource" "null_resource_simple" {
   }
 
 }
+
+
+resource "null_resource" "null_resource_simple1" {
+   provisioner "local-exec" {
+    command = "echo Hello World"
+  }
+
+}
